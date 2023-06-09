@@ -1,0 +1,45 @@
+.cart{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:99;
+    .cart-overlay{
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        position:absolute;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        .cart-content{
+            margin-left: 80%;
+            justify-content:  end;
+            height:100vh;
+            width:320px;
+            position:relative;
+            z-index: 999;
+            background-color: rgba($color: #fff, $alpha: 1);
+            animation: cartSlider 0.5s ease forwards ;
+            transform: translateX(100%);
+            
+            .cart-close{
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+
+@keyframes cartSlider{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@media screen and (max-width:480px){
+    
+}

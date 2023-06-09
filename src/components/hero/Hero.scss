@@ -1,0 +1,41 @@
+.hero{
+    height:80vh;
+    width:auto;
+    background-image: url(../../assets/banner3.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    .hero-content{
+        height: 100%;
+        flex-direction: column;
+        background-color: rgba($color: #000000, $alpha:0.5);
+        text-align: center;
+        .hero-heading{
+            color:white;
+            font-size: 3rem;
+        }
+        .hero-subheading{
+            color:white;
+            font-size: 1.2rem;
+        }
+        .hero-btn{
+            margin-top:10px;
+            padding:10px;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .hero{
+        height:60vh;
+        width:auto;
+        .hero-content{
+            .hero-heading{
+                font-size: 2rem;
+            }
+            .hero-subheading{
+                font-size: 1rem;
+            }
+
+        }
+    }
+}

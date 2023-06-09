@@ -1,0 +1,22 @@
+.collection{
+    margin-top: 40px;
+    .info{
+        margin-bottom: 10px;
+        text-align: center;
+        .heading{
+            
+        }
+        .sub-heading{
+            margin-top: 10px;
+        }
+    }
+    .content{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        row-gap: 30px;
+        column-gap: 20px;
+    }
+}
