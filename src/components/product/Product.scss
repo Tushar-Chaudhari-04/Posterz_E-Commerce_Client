@@ -1,8 +1,9 @@
 .product{
     cursor:pointer;
     min-width:280px;
-    height:40%;
     border:0.5px solid rgba($color: #ddd, $alpha:0.5);
+    flex:1;
+    flex-grow: 0;
     .image-container{
         position: relative;
         height:300px;
