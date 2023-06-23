@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.99a35938.css",
+    "main.js": "/static/js/main.bd41a109.js",
+    "static/media/banner3.jpg": "/static/media/banner3.997cf5b2cbfd60d6a88c.jpg",
+    "static/media/crdeit card.svg": "/static/media/crdeit card.69e7ec34d1302e6b58b2cb1abe6b2f9c.svg",
+    "static/media/Naruto1.webp": "/static/media/Naruto1.753b50441c0034e70f09.webp",
+    "index.html": "/index.html",
+    "main.99a35938.css.map": "/static/css/main.99a35938.css.map",
+    "main.bd41a109.js.map": "/static/js/main.bd41a109.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99a35938.css",
+    "static/js/main.bd41a109.js"
+  ]
+}
