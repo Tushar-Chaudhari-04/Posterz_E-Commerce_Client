@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Posterz E-Commerce Website Flow
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**1. Posterz Landing Page**
+![Posterz Landing Page](https://res.cloudinary.com/dchyp1crz/image/upload/v1687632363/Posters%20ScreenShots/Landing_Page_y25xuk.png "Posterz Landing Page")
 
-## Available Scripts
+**2.Shop By Category in Landing Page**
+![Shop By Category](https://res.cloudinary.com/dchyp1crz/image/upload/v1687632347/Posters%20ScreenShots/Shop_by_category_gebmee.png "Shop By Category")
 
-In the project directory, you can run:
+**3.Top Products in Landing Page**
+![Shop By Top Products](https://res.cloudinary.com/dchyp1crz/image/upload/v1687632350/Posters%20ScreenShots/products_LP_tbnexh.png "Shop By Top Products")
 
-### `npm start`
+**4.Category in Collection Page**
+![Shop By Category in Collection](https://res.cloudinary.com/dchyp1crz/image/upload/v1687632347/Posters%20ScreenShots/collection_page_iyoqjn.png "Shop By Category in Collection")
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**5.Category With Sorting in Collection page**
+![Category With Sorting](https://res.cloudinary.com/dchyp1crz/image/upload/v1687632351/Posters%20ScreenShots/Collection_with_Sorting_sj9tiq.png "Category With Sorting")
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**6.Products detail Page**
+![Products Detail Page](https://res.cloudinary.com/dchyp1crz/image/upload/v1687632353/Posters%20ScreenShots/Product_Details_Page_aqvpgz.png  "Products Detail Page")
 
-### `npm test`
+**7.Shopping Cart Page**
+![Shopping Cart Page](https://res.cloudinary.com/dchyp1crz/image/upload/v1687632345/Posters%20ScreenShots/Shopping_Cart_kcdbvy.png 
+"Shopping Cart Page")
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**8.Stripe Payment Gateway**
+![Stripe Payment Gateway](https://res.cloudinary.com/dchyp1crz/image/upload/v1687632345/Posters%20ScreenShots/Stripe_Payment_Gateway_qzbeua.png
+"Stripe Payment Gateway")
 
-### `npm run build`
+**9.Stripe Payment Success**
+![Stripe Payment Success](https://res.cloudinary.com/dchyp1crz/image/upload/v1687632336/Posters%20ScreenShots/Payment_Successfully_ho1pt2.png
+"Stripe Payment Success")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**10.Stripe Payment Failure**
+![Stripe Payment Failure](https://res.cloudinary.com/dchyp1crz/image/upload/v1687632335/Posters%20ScreenShots/Payment_Failed_Page_wyooar.png
+"Stripe Payment Failure")
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**10.Posterz Footer**
+![Posterz Footer*](https://res.cloudinary.com/dchyp1crz/image/upload/v1687632335/Posters%20ScreenShots/footer_n426ni.png 
+"Posterz Footer*")
