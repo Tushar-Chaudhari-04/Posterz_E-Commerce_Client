@@ -6,6 +6,9 @@ import { axiosClient } from "../../axiosClient";
 import { useParams } from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux"
 import { addToCart, removeFromCart } from "../../redux/slice/cartSlice/CartSlice";
+import { loadStripe } from "@stripe/stripe-js";
+
+const stripePromise = loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY);
 
 const ProductDetails = () => {
   const [showTopBtn, setShowTopBtn] = useState(false);
@@ -17,6 +20,18 @@ const ProductDetails = () => {
   const quantity=cartData.find(item=>(
     item.id==params.productId
   ))?.quantity || 0;
+
+  const handleCheckout=async()=>{
+    console.log("handleCheckout");
+    const checkoutResponse=await axiosClient.post("/orders",{
+      products:cartData
+    })
+    console.log("checkoutResponse",checkoutResponse);
+    const stripe=await stripePromise;
+    await stripe.redirectToCheckout({
+      sessionId:checkoutResponse.data.stripeId
+    })
+  }
 
   const fetchData=async()=>{
     const productResponse=await axiosClient.get(`/products?filters[id][$eq]=${params.productId}&populate=image`);
@@ -79,8 +94,8 @@ const ProductDetails = () => {
           </button>
         </div>
         <div className="addBtn">
-        <button className="addtocart" onClick={""}>BUY NOW</button>
-        <button className="addtocart" onClick={""}>ADD TO CART</button>
+        <button className="addtocart" onClick={handleCheckout}>BUY NOW</button>
+        <button className="addtocart" onClick={()=>{dispatch(addToCart(productData))}}>ADD TO CART</button>
         </div>
           
       </div>

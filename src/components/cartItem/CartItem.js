@@ -8,9 +8,11 @@ import { addToCart, removeFromCart, removeItem } from "../../redux/slice/cartSli
 const CartItem = (data) => {
   const dispatch=useDispatch();
   console.log("data",data.data)
-  const cartData=useSelector(state=>state.cartReducer.cart);
-  const quantity=cartData.find(item=>item.id==data.data.id)?.quantity|| 0;
-  console.log("cartData 123321",cartData[0],quantity);
+  const cartAllData=useSelector(state=>state.cartReducer.cart);
+  console.log("cartAllData",cartAllData);
+  const cartData=cartAllData.find(item=>item.id==data.data.id);
+  const quantity=cartAllData.find(item=>item.id==data.data.id)?.quantity|| 0;
+  console.log("cartData 123321",cartAllData,cartData,quantity);
 
   return (
     <div className="cart-item">
@@ -27,7 +29,7 @@ const CartItem = (data) => {
             className="counterBtn"
             name="dec"
             value="dec"
-            onClick={()=>{dispatch(removeFromCart(cartData[0]))}}
+            onClick={()=>{dispatch(removeFromCart(cartData))}}
             disabled={quantity===1?true:false}
           >
             -
@@ -37,14 +39,14 @@ const CartItem = (data) => {
             className="counterBtn"
             name="inc"
             value="inc"
-            onClick={()=>{dispatch(addToCart(cartData[0]))}}
+            onClick={()=>{dispatch(addToCart(cartData))}}
           >
             +
           </button>
         </div>
       </div>
       <div className="item-price">₹ {data.data.price*quantity}</div>
-      <RxCross2 className="item-cancel" onClick={()=>{dispatch(removeItem(cartData[0]))}}/>
+      <RxCross2 className="item-cancel" onClick={()=>{dispatch(removeItem(cartData))}}/>
     </div>
   );
 };
